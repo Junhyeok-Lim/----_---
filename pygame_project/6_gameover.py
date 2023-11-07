@@ -225,6 +225,10 @@ while running:
                     
                 break
 
+        else: # 계속 게임 진행
+            continue # 안쪽 for 문 조건이 맞지 않으면 continue. 바깥 for 문 계속 수행
+        break # 안쪽 for 문에서 break 를 만나면 여기로 진입 가능. 2중 for 문을 한 번에 탈출
+
     # 충돌된 공 or 무기 없애기
     if ball_to_remove > -1:
         del balls[ball_to_remove]
